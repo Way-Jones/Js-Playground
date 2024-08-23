@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+let heightInches = 68;
+let weightPounds = 154;
+
+
+let heightCm = heightInches * 2.54;
+
+
+let weightKg = weightPounds / 2.2046;
+
+
+console.log(`Height: ${heightInches} inches = ${heightCm} cm`);
+console.log(`Weight: ${weightPounds} pounds = ${weightKg} kg`);
+
+
+let heightMeters = heightCm / 100; 
+let bmi = weightKg / (heightMeters * heightMeters);
+
+
+console.log(`BMI: ${bmi.toFixed(2)}`);
+    </Script>
+</body>
+</html>
