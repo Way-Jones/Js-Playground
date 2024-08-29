@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myCar = {
+  make: 'Toyota',
+  model: 'Corolla',
+  year: 2015,
+  mileage: 75000,
+  hasSunroof: true
+};
+
+let propertyName = 'color';
+myCar[propertyName] = 'Silver';
+propertyName = 'forSale';
+myCar[propertyName] = true;
+console.log(`Make: ${myCar.make}, Model: ${myCar.model}`);
+console.log(`For Sale: ${myCar.forSale}`);
+    </script>
+</body>
+</html>

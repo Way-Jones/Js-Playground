@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let randomValue = Math.floor(Math.random() * 6);
+let userQuestion = prompt("Ask a question:");
+
+let response;
+
+switch (randomValue) {
+  case 0:
+    response = "that is exactly correct.";
+    break;
+  case 1:
+    response = "Maybe Maybe not depends on how you see it right  so.";
+    break;
+  case 2:
+    response = "Without a doubt.";
+    break;
+  case 3:
+    response = "nope - definitely not.";
+    break;
+  case 4:
+    response = "You may rely on it.";
+    break;
+  case 5:
+    response = "Signs point to never in a milion years.";
+    break;
+  default:
+    response = "Error: no question please as something.";
+    break;
+}
+
+let finalResponse = `The answer to your question "${userQuestion}" is: ${response}`;
+console.log(finalResponse);
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+![alt text](<input 1.PNG>) 
+![alt text](<input 2.PNG>) 
+![alt text](<input 3.PNG>)
+![alt text](<output 1.PNG>)
+ ![alt text](<output 2.PNG>)
+ ![alt text](<output 3.PNG>)
