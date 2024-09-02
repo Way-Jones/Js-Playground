@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+const choices = ['Rock', 'Paper', 'Scissors'];
+
+const computerChoiceIndex = Math.floor(Math.random() * 3);
+const choose = prompt("what do you choose:")
+
+let playerChoice = choices[choose];
+let computerChoice = choices[computerChoiceIndex];
+let resultMessage = '';
+
+if (choose === computerChoiceIndex) {
+  resultMessage = 'It\'s a tie!';
+} else {
+  
+  if ((choose === 0 && computerChoiceIndex === 2) || 
+      (choose === 1 && computerChoiceIndex === 0) || 
+      (choose === 2 && computerChoiceIndex === 1)) { 
+    resultMessage = `You win! ${playerChoice} beats ${computerChoice}.`;
+  } else {
+    resultMessage = `Computer wins! ${computerChoice} beats ${playerChoice}.`;
+  }
+}
+
+console.log(`You chose: ${playerChoice}`);
+console.log(`Computer chose: ${computerChoice}`);
+console.log(resultMessage);
+    </script>
+</body>
+</html>

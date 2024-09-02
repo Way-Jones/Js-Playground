@@ -1,0 +1,1 @@
+![alt text](ans7.PNG)
