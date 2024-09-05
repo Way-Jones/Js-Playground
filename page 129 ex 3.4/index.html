@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let results = [];
+
+for (let i = 0; i < 10; i++) {
+  let num1 = i * 5;
+  let num2 = i * i;
+
+  function addValues(a, b) {
+    return a + b;
+  }
+
+  let result = addValues(num1, num2);
+
+  results.push(result);
+}
+
+console.log(results);
+    </script>
+</body>
+</html>

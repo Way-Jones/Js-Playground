@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let grid = [];
+
+let numberOfCells = 64;
+
+let counter = 0;
+
+
+let row;
+
+for (let i = 0; i < numberOfCells + 1; i++) {
+
+  let numberOfColumns = 8;
+  if (counter % numberOfColumns === 0) {
+
+    if (row !== undefined) {
+      grid.push(row);
+    }
+
+    row = [];
+  }
+
+  let temp = counter;
+  row.push(temp);
+
+  counter++;
+
+  if (counter === numberOfCells + 1) {
+    grid.push(row);
+  }
+}
+
+console.log(grid);
+    </script>
+</body>
+</html>

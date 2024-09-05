@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let myTable = [];
+
+let numRows = 5;
+let numCols = 3;
+
+let counter = 0;
+
+for (let i = 0; i < numRows; i++) {
+  let tempTable = [];
+
+  for (let j = 0; j < numCols; j++) {
+    tempTable.push(`Cell ${counter}`);
+    counter++;
+  }
+
+  myTable.push(tempTable);
+}
+
+console.log(myTable);
+    </script>
+</body>
+</html>

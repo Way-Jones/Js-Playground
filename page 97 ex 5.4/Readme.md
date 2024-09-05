@@ -1,0 +1,1 @@
+![alt text](<table ex 5.4.png>)

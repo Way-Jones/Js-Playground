@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let descriptiveWords = [
+    "amazing",
+  "awesome",
+  "brilliant",
+  "fantastic",
+  "incredible",
+  "outstanding",
+  "remarkable",
+  "spectacular",
+  "talented",
+  "wonderful"
+        ];
+
+        function describeName() {
+            let name = prompt ("Please enter name");
+            let randomIndex = Math.floor(Math.random() * descriptiveWords.length)
+            let randomWord = descriptiveWords[randomIndex];
+
+
+console.log(`${name} is ${randomWord}!`);
+}
+
+describeName();
+        
+    </script>
+</body>
+</html>
